@@ -42,3 +42,52 @@ Steps Performed
 11. Evaluated model performance using the R² Score.
 
 12. Built a prediction system that accepts new house details and predicts the house price.
+
+
+
+Diabetes Prediction
+
+Steps Performed
+
+1. Imported required libraries:
+   
+   - Pandas
+   - NumPy
+   - StandardScaler
+   - Train-Test Split
+   - Support Vector Machine (SVM)
+   - Accuracy Score
+   - Classification Report
+   - Confusion Matrix
+
+2. Loaded the diabetes dataset using Pandas.
+
+3. Explored the dataset using:
+   
+   - "head()"
+   - "info()"
+   - "describe()"
+   - "shape()"
+
+4. Analyzed the target variable using:
+   
+   - "value_counts()"
+   - "groupby().mean()"
+
+5. Selected features (X) and target variable (Outcome).
+
+6. Applied feature scaling using StandardScaler.
+
+7. Split the dataset into training and testing sets using an 80:20 ratio with stratification.
+
+8. Trained a Support Vector Machine (SVM) classifier using a linear kernel.
+
+9. Generated predictions for both training and testing data.
+
+10. Evaluated the model using:
+    
+    - Accuracy Score
+    - Classification Report
+    - Confusion Matrix
+
+11. Built a prediction system that accepts patient health parameters and predicts whether the patient is diabetic or non-diabetic.
