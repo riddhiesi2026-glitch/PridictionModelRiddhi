@@ -1,4 +1,4 @@
-House Price Prediction
+#House Price Prediction
 
 Steps Performed
 
@@ -45,7 +45,7 @@ Steps Performed
 
 
 
-Diabetes Prediction
+#Diabetes Prediction
 
 Steps Performed
 
@@ -91,3 +91,53 @@ Steps Performed
     - Confusion Matrix
 
 11. Built a prediction system that accepts patient health parameters and predicts whether the patient is diabetic or non-diabetic.
+
+
+#Wine Quality Prediction
+
+Steps Performed
+
+1. Imported required libraries:
+   
+   - Pandas
+   - NumPy
+   - StandardScaler
+   - Train-Test Split
+   - Random Forest Regressor
+   - R² Score
+
+2. Loaded the wine quality dataset using Pandas.
+
+3. Explored the dataset using:
+   
+   - "head()"
+   - "info()"
+   - "describe()"
+   - "shape()"
+   - "isnull().sum()"
+
+4. Handled missing values by filling:
+   
+   - Calories with median
+   - pH with median
+   - Sulphates with median
+
+5. Performed outlier detection and removal using the IQR (Interquartile Range) method.
+
+6. Selected features (X) and target variable (Quality).
+
+7. Applied feature scaling using StandardScaler.
+
+8. Split the dataset into training and testing sets using an 80:20 ratio.
+
+9. Trained a Random Forest Regressor model with:
+   
+   - n_estimators = 200
+   - max_depth = 4
+   - random_state = 42
+
+10. Generated predictions for training and testing data.
+
+11. Evaluated model performance using the R² Score.
+
+12. Built a prediction system that accepts wine characteristics and predicts wine quality.
