@@ -1,143 +1,152 @@
-#House Price Prediction
+
+# House Price Prediction
 
 Steps Performed
 
-1. Imported required libraries:
-   
-   - Pandas
-   - NumPy
-   - Scikit-learn
-   - StandardScaler
-   - Train-Test Split
-   - Random Forest Regressor
-   - R² Score
+- Imported required libraries:
+  
+  - Pandas
+  - NumPy
+  - StandardScaler
+  - Train-Test Split
+  - Random Forest Regressor
+  - R² Score
 
-2. Loaded the house price dataset using Pandas.
+- Loaded the house price dataset and explored it using:
+  
+  - "head()"
+  - "shape()"
+  - "info()"
+  - "isnull().sum()"
 
-3. Performed exploratory data analysis:
-   
-   - Viewed dataset using "head()"
-   - Checked dataset shape
-   - Used "info()" to inspect data types
-   - Checked missing values using "isnull().sum()"
+- Handled missing values using median imputation.
 
-4. Handled missing values by filling them with the median.
+- Applied the IQR (Interquartile Range) method to detect and remove outliers.
 
-5. Detected and removed outliers using the IQR (Interquartile Range) method.
+- Defined feature variables (X) and target variable (Price).
 
-6. Selected features (X) and target variable (Price).
+- Standardized feature values using StandardScaler.
 
-7. Applied feature scaling using StandardScaler.
+- Split the dataset into training and testing sets using:
+  
+  - "test_size = 0.2"
+  - "random_state = 2"
 
-8. Split the dataset into training and testing sets using an 80:20 ratio.
+- Trained a Random Forest Regressor model using:
+  
+  - "n_estimators = 200"
+  - "max_depth = 10"
+  - "random_state = 2"
 
-9. Trained a Random Forest Regressor model with:
-   
-   - n_estimators = 200
-   - max_depth = 10
-   - random_state = 2
+- Generated predictions on training and testing data.
 
-10. Generated predictions for training and testing data.
+- Evaluated model performance using the R² Score.
 
-11. Evaluated model performance using the R² Score.
-
-12. Built a prediction system that accepts new house details and predicts the house price.
-
-
-
-#Diabetes Prediction
-
-Steps Performed
-
-1. Imported required libraries:
-   
-   - Pandas
-   - NumPy
-   - StandardScaler
-   - Train-Test Split
-   - Support Vector Machine (SVM)
-   - Accuracy Score
-   - Classification Report
-   - Confusion Matrix
-
-2. Loaded the diabetes dataset using Pandas.
-
-3. Explored the dataset using:
-   
-   - "head()"
-   - "info()"
-   - "describe()"
-   - "shape()"
-
-4. Analyzed the target variable using:
-   
-   - "value_counts()"
-   - "groupby().mean()"
-
-5. Selected features (X) and target variable (Outcome).
-
-6. Applied feature scaling using StandardScaler.
-
-7. Split the dataset into training and testing sets using an 80:20 ratio with stratification.
-
-8. Trained a Support Vector Machine (SVM) classifier using a linear kernel.
-
-9. Generated predictions for both training and testing data.
-
-10. Evaluated the model using:
-    
-    - Accuracy Score
-    - Classification Report
-    - Confusion Matrix
-
-11. Built a prediction system that accepts patient health parameters and predicts whether the patient is diabetic or non-diabetic.
+- Built a prediction system that estimates house prices from user-provided inputs.
 
 
-#Wine Quality Prediction
+
+# Diabetes Prediction
 
 Steps Performed
 
-1. Imported required libraries:
-   
-   - Pandas
-   - NumPy
-   - StandardScaler
-   - Train-Test Split
-   - Random Forest Regressor
-   - R² Score
+- Utilized the following libraries:
+  
+  - Pandas
+  - NumPy
+  - StandardScaler
+  - Train-Test Split
+  - Support Vector Machine (SVM)
+  - Accuracy Score
+  - Confusion Matrix
+  - Classification Report
 
-2. Loaded the wine quality dataset using Pandas.
+- Imported and analyzed the diabetes dataset using:
+  
+  - "head()"
+  - "info()"
+  - "describe()"
+  - "shape()"
 
-3. Explored the dataset using:
-   
-   - "head()"
-   - "info()"
-   - "describe()"
-   - "shape()"
-   - "isnull().sum()"
+- Examined the target variable through:
+  
+  - "value_counts()"
+  - "groupby().mean()"
 
-4. Handled missing values by filling:
-   
-   - Calories with median
-   - pH with median
-   - Sulphates with median
+- Separated input features (X) and output labels (Outcome).
 
-5. Performed outlier detection and removal using the IQR (Interquartile Range) method.
+- Applied feature scaling with StandardScaler.
 
-6. Selected features (X) and target variable (Quality).
+- Performed train-test splitting using:
+  
+  - "test_size = 0.2"
+  - "stratify = y"
+  - "random_state = 2"
 
-7. Applied feature scaling using StandardScaler.
+- Trained an SVM classifier with:
+  
+  - "kernel = 'linear'"
 
-8. Split the dataset into training and testing sets using an 80:20 ratio.
+- Generated predictions on both training and testing datasets.
 
-9. Trained a Random Forest Regressor model with:
-   
-   - n_estimators = 200
-   - max_depth = 4
-   - random_state = 42
+- Evaluated classification performance using:
+  
+  - Accuracy Score
+  - Confusion Matrix
+  - Classification Report
 
-10. Generated predictions for training and testing data.
+- Developed a prediction system that classifies patients as diabetic or non-diabetic.
 
-11. Evaluated model performance using the R² Score.
 
-12. Built a prediction system that accepts wine characteristics and predicts wine quality.
+
+# Wine Quality Prediction
+
+Steps Performed
+
+- Employed the following libraries:
+  
+  - Pandas
+  - NumPy
+  - StandardScaler
+  - Train-Test Split
+  - Random Forest Regressor
+  - R² Score
+
+- Loaded and inspected the wine quality dataset using:
+  
+  - "head()"
+  - "info()"
+  - "describe()"
+  - "shape()"
+  - "isnull().sum()"
+
+- Replaced missing values using median values for:
+  
+  - Calories
+  - pH
+  - Sulphates
+
+- Performed outlier detection and treatment using the IQR method.
+
+- Selected wine attributes as features (X) and quality as the target variable (Y).
+
+- Applied StandardScaler to normalize feature values.
+
+- Split the dataset into training and testing sets using:
+  
+  - "test_size = 0.2"
+  - "random_state = 42"
+
+- Trained a Random Forest Regressor model using:
+  
+  - "n_estimators = 200"
+  - "max_depth = 4"
+  - "random_state = 42"
+
+- Generated predictions on training and testing data.
+
+- Evaluated model performance using the R² Score.
+
+- Implemented a prediction system that estimates wine quality from user-provided characteristics.
+
+
